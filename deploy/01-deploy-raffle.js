@@ -29,6 +29,13 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
         subscriptionId = networkConfig[chainId]["subscriptionId"]
     }
 
+    // For testnet deployment,
+    // 1. Get our subId fro chainlink VRF
+    // 2. Deploy contract using that subId,
+    // 3. Register the constract with ChainlinkVRF & it's subId
+    // 4. Register the contract with Chainlink Keepers
+    // 5. Run staging tests
+
     const entranceFee = networkConfig[chainId]["entranceFee"]
     const gasLane = networkConfig[chainId]["gasLane"]
     const callbackGasLimit = networkConfig[chainId]["callbackGasLimit"]

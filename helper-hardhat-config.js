@@ -7,9 +7,9 @@ const networkConfig = {
         entranceFee: ethers.utils.parseEther("0.01"),
         gasLane:
             "0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc",
-        subscriptionId: "0",
+        subscriptionId: "6996",
         callbackGasLimit: "500000",
-        interval: "300",
+        interval: "30",
     },
     80001: {
         name: "Polygon Mumbai",
@@ -17,9 +17,9 @@ const networkConfig = {
         entranceFee: ethers.utils.parseEther("0.01"),
         gasLane:
             "0x4b09e658ed251bcafeebbc69400383d49f344ace09b9576fe248bb02c003fe9f",
-        subscriptionId: "0",
+        subscriptionId: "800",
         callbackGasLimit: "500000",
-        interval: "300",
+        interval: "30",
     },
     31337: {
         name: "hardhat",
